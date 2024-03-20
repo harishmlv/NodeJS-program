@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition & Multiplication</title>
+    <script type="text/javascript">
+        function add()
+        {
+            var a = parseInt(document.getElementById("num1").value)
+            var b = parseInt(document.getElementById("num2").value)
+            var c = a + b
+            document.getElementById("num3").value=c
+        }
+        function multi()
+        {
+            var a = parseInt(document.getElementById("num1").value)
+            var b = parseInt(document.getElementById("num2").value)
+            var c = a * b
+            document.getElementById("num3").value=c
+        }
+
+    </script>
+</head>
+<body>
+    <table border="1" align="center">
+        <tr>
+            <td>First Number : </td>
+            <td>
+                <input type="Number" id="num1" placeholder="Input Number"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Second Number : </td>
+            <td>
+                <input type="Number" id="num2" placeholder="Input Number"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Result : </td>
+            <td>
+                <input type="text" id="num3" placeholder="Result"/>
+            </td>
+        </tr>
+        <tr >
+            <td>
+                <input type="submit" onclick="add()" value="add"/>
+            </td>
+            <td>
+                <input type="submit" onclick="multi()" value="Multiply"/>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>

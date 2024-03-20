@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Prime Number</title>
+    <script type="text/javascript">
+
+        function check()
+        {
+            var digit = parseInt(document.getElementById("num").value)  //Input from user
+
+            var c=0        
+            for (let i = 1; i<=digit; i++)
+            {
+                if(digit % i ==0)      // Logic
+                {
+                    c++ //c=c+1
+                }
+            }
+            if(c==2)
+            {
+                alert("Prime Number")
+            }
+            else
+            {
+                alert("Not a Prime Number")
+            }
+        }
+    </script>
+</head>
+<body>
+
+    Enter Number : <input type="number" id="num" placeholder="Enter Any Number"/>
+    <button onclick="check()">Check</button>
+
+</body>
+</html>

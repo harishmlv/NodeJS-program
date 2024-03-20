@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Odd</title>
+    <script type="text/javascript">
+
+        function evenOdd()
+        {
+            var n = parseInt(document.getElementById("num1").value)
+            if(n%2==0)
+            {
+                 alert("Even Number")
+            }
+            else
+            {
+                alert("Odd Number")
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+    Enter Name : <input type="number" id="num1" placeholder="Input Number">
+    <button onclick="evenOdd()">Check</button>
+
+</body>
+</html>

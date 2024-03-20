@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>armstrog numbers</title>
+    <script>
+        function arm()
+        {
+            var i,h,t,u,sum;
+            for(i=101;i<=999;i++)
+            {
+                h=parseInt(i/100);
+                t=parseInt((i/10)%10);
+                u=(i%10);
+                sum=(h*h*h)+(t*t*t)+(u*u*u);
+                if(i==sum)
+                {
+                    document.getElementById("result").innerHTML+= i+"<br>";
+                }
+            }   
+        }
+    </script>
+</head>
+<body> 
+    <table align="center">
+        <tr>
+            <td><h1 align="center"> Armstrong Numbers 101 to 999</h1></td>
+        </tr>
+        <tr>
+        <td><button style="background-color: pink; border-radius: 4px;" onclick="arm()">show</button></td>
+        </tr>
+    </table>
+    <h1 id="result"></h1>
+</body>
+</html>
